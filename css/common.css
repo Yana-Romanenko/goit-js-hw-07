@@ -97,7 +97,7 @@ li.item > ul > li {
   display: flex;
   column-gap: 16px;
 
-  padding-bottom: 48px;
+  margin-bottom: 48px;
 }
 
 input {
