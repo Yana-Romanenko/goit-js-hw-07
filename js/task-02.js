@@ -33,16 +33,18 @@ const images = [
 
 const galleryCreation = document.querySelector('.gallery');
 
-images.forEach((image) => {
+const galleryItems = images.map(image => {
   const listItem = document.createElement('li');
   const img = document.createElement('img');
 
-  img.url = image.url;
+  img.src = image.url;
   img.alt = image.alt;
 
   listItem.appendChild(img);
   galleryCreation.appendChild(listItem);
-});
+}).join;
+
+
 
 
 
