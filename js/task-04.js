@@ -15,33 +15,54 @@
 //  і очисти значення полів форми методом reset.
 
 
+// const form = document.querySelector('.login-form');
+
+
+// const registration = (event) => {
+//     event.preventDefault();
+    
+//     const emailValue = form.elements.email.value.trim();
+//     const passwordValue = form.elements.password.value.trim();
+
+//     if (!emailValue || !passwordValue) {
+//         alert('All form fields must be filled in');
+//     }
+
+//     const formData = {
+//     email: emailValue,
+//     password: passwordValue,
+// };
+
+// console.log(formData);
+// form.reset();
+// };
+
+// form.addEventListener('submit', registration); 
+
+
 const form = document.querySelector('.login-form');
 
+const registration = ((event) => {
+  event.preventDefault();
 
-const registration = (event) => {
-    event.preventDefault();
-    
-    const emailValue = form.elements.email.value.trim();
-    const passwordValue = form.elements.password.value.trim();
+  const emailInput = form.elements.email;
+  const passwordInput = form.elements.password;
 
-    if (!emailValue || !passwordValue) {
-        alert('All form fields must be filled in');
-    }
+  if (emailInput.value.trim() === '' || passwordInput.value.trim() === '') {
+    alert('All form fields must be filled in');
+    return;
+  }
 
-    const formData = {
-    email: emailValue,
-    password: passwordValue,
-};
+  const formData = {
+    email: emailInput.value.trim(),
+    password: passwordInput.value.trim()
+  };
 
-console.log(formData);
-form.reset();
-};
+  console.log(formData);
+  form.reset();
+});
 
 form.addEventListener('submit', registration); 
-
-
-
-
 
 
 

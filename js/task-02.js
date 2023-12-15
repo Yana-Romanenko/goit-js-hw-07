@@ -41,8 +41,13 @@ const galleryItems = images.map(image => {
   img.alt = image.alt;
 
   listItem.appendChild(img);
-  galleryCreation.appendChild(listItem);
-}).join;
+  return listItem;
+});
+
+galleryItems.forEach(galleryItem => {
+  galleryCreation.appendChild(galleryItem);
+});
+
 
 
 
