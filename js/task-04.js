@@ -15,29 +15,6 @@
 //  і очисти значення полів форми методом reset.
 
 
-// const form = document.querySelector('.login-form');
-
-
-// const registration = (event) => {
-//     event.preventDefault();
-    
-//     const emailValue = form.elements.email.value.trim();
-//     const passwordValue = form.elements.password.value.trim();
-
-//     if (!emailValue || !passwordValue) {
-//         alert('All form fields must be filled in');
-//     }
-
-//     const formData = {
-//     email: emailValue,
-//     password: passwordValue,
-// };
-
-// console.log(formData);
-// form.reset();
-// };
-
-// form.addEventListener('submit', registration); 
 
 
 const form = document.querySelector('.login-form');

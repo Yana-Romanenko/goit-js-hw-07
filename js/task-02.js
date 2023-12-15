@@ -44,9 +44,7 @@ const galleryItems = images.map(image => {
   return listItem;
 });
 
-galleryItems.forEach(galleryItem => {
-  galleryCreation.appendChild(galleryItem);
-});
+galleryCreation.append(...galleryItems);
 
 
 
